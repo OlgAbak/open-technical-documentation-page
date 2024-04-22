@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"></link>
+  <title>Python</title>
+</head>
+<body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>Book</header>
+      <ul>
+     <li> <a class=nav-link href="#Chapter_1:_Introduction">Chapter 1: Introduction</a></li>
+      <li><a class=nav-link href="#Chapter_2:_Variables">Chapter 2: Variables</a></li>
+      <li><a class=nav-link href="#Chapter_3:_Conditionals">Chapter 3: Conditionals</a></li>
+      <li><a class=nav-link href="#Chapter_4:_Functions">Chapter 4: Functions</a></li>
+     <li><a class=nav-link href="#Chapter_5:_Iterations">Chapter 5: Iterations</a></li>
+      <li><a class=nav-link href="#Chapter_6:_Strings">Chapter 6: Strings</a></li>
+      <li><a class=nav-link href="#Chapter_7:_Files">Chapter 7: Files</a></li>
+      <li><a class=nav-link href="#Chapter_8:_Lists">Chapter 8: Lists</a></li>
+      <li><a class=nav-link href="#Chapter_9:_Dictionaries">Chapter 9: Dictionaries</a></li>
+      <li><a class=nav-link href="#Chapter_10:_Tuples">Chapter 10: Tuples</a></li>
+      <li><a class=nav-link href="#Chapter_11:_Regex">Chapter 11: Regex</a></li>
+      <li><a class=nav-link href="#Chapter_12:_Networked_Programs">Chapter 12: Networked Programs</a></li>
+      <li><a class=nav-link href="#Chapter_13:_Python_and_Web_Services">Chapter 13: Python and Web Services</a></li>
+      <li><a class=nav-link href="#Chapter_14:_Python_Objects">Chapter 14: Python Objects</a></li>
+      <li><a class=nav-link href="#Chapter_15:_Python_and_Databases">Chapter 15: Python and Databases</a></li>
+      <li><a class=nav-link href="#Chapter_16:_Data_Visualisation">Chapter 16: Data Visualisation</a></li>
+      </ul>
+    </nav>
+      <header>
+        <h1>Python for Everybody</h1>
+      </header>
+    <section class="main-section" id="Chapter_1:_Introduction">
+      <header>
+        <h3>Chapter 1: Introduction</h3>
+      </header>
+      <p>Writing programs (or programming) is a very creative and rewarding activity. You can write programs for many reasons, ranging from making your living to solving a difficult data analysis problem to having fun to helping someone else solve a problem. This book assumes that everyone needs to know how to program, and that once you know how to program you will figure out what you want to do with your newfound skills.</p>
+      <p>In the rest of this book, we will try to turn you into a person who is skilled in the art of programming. In the end you will be a programmer - perhaps not a professional programmer, but at least you will have the skills to look at a data/information analysis problem and develop a program to solve the problem.
+
+In a sense, you need two skills to be a programmer:</p>
+  <ul>
+    <li>First, you need to know the programming language (Python) - you need to know the vocabulary and the grammar. You need to be able to spell the words in this new language properly and know how to construct well-formed “sentences” in this new language.</li>
+    <p></p>
+    <li>Second, you need to “tell a story”. In writing a story, you combine words and sentences to convey an idea to the reader. There is a skill and art in constructing the story, and skill in story writing is improved by doing some writing and getting some feedback. In programming, our program is the “story” and the problem you are trying to solve is the “idea”.</li>
+</ul>
+    </section>
+    <section class="main-section" id="Chapter_2:_Variables">
+      <header>
+        <h3>Chapter 2: Variables</h3>
+      </header>
+      <p>One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.</p>
+      <p>An assignment statement creates new variables and gives them values:</p>
+      <code>>>> message = 'And now for something completely different'
+      <p></p>
+>>> n = 17
+      <p></p>
+>>> pi = 3.1415926535897931</code>
+<p>This example makes three assignments. The first assigns a string to a new variable named message; the second assigns the integer 17 to n; the third assigns the (approximate) value of π to pi.</p>
+<p>To display the value of a variable, you can use a print statement:</p>
+<code>>>> print(n)
+<p></p>
+17
+<p></p>
+>>> print(pi)
+3.141592653589793</code>
+<p>The type of a variable is the type of the value it refers to.</p>
+<code>>>> type(message)
+<p>class 'str'</p>
+<p></p>
+>>> type(n)
+<p>class 'int'</p>
+>>> type(pi)
+<p>class 'float'</p>
+</code>
+    </section>
+    <section class="main-section" id="Chapter_3:_Conditionals">
+      <header>
+        <h3>Chapter 3: Conditionals</h3>
+      </header>
+      <p>In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement:</p>
+      <code>
+        if x > 0 :
+        <p></p>
+print('x is positive')</code>
+<p>The boolean expression after the if statement is called the condition. We end the if statement with a colon character (:) and the line(s) after the if statement are indented.</p>
+    </section>
+    <section class="main-section" id="Chapter_4:_Functions">
+      <header>
+        <h3>Chapter 4: Functions</h3>
+      </header>
+      <p>In the context of programming, a function is a named sequence of statements that performs a computation. When you define a function, you specify the name and the sequence of statements. Later, you can “call” the function by name. We have already seen one example of a function call:</p>
+<code>
+  >>> type(32)
+  <p></p>
+class 'int'
+</code>
+<p>The name of the function is type. The expression in parentheses is called the argument of the function. The argument is a value or variable that we are passing into the function as input to the function. The result, for the type function, is the type of the argument. It is common to say that a function “takes” an argument and “returns” a result. The result is called the return value.
+</p>
+    </section>
+    <section class="main-section" id="Chapter_5:_Iterations">
+      <header>
+        <h3>Chapter 5: Iterations</h3>
+      </header>
+      <p>Computers are often used to automate repetitive tasks. Repeating identical or similar tasks without making errors is something that computers do well and people do poorly. Because iteration is so common, Python provides several language features to make it easier.</p>
+    <p>One form of iteration in Python is the while statement. Here is a simple program that counts down from five and then says “Blastoff!”.</p>
+    <code>
+      n = 5
+      <p></p>
+while n > 0:
+<p></p>
+    print(n)
+    <p></p>
+    n = n - 1
+    <p></p>
+print('Blastoff!')
+    </code>
+    <p>You can almost read the while statement as if it were English. It means, “While n is greater than 0, display the value of n and then reduce the value of n by 1. When you get to 0, exit the while statement and display the word Blastoff!”</p>
+    </section>
+    <section class="main-section" id="Chapter_6:_Strings">
+      <header>
+        <h3>Chapter 6: Strings</h3>
+      </header>
+      <p>A string is a sequence of characters. You can access the characters one at a time with the bracket operator:</p>
+      <code>
+        >>> fruit = 'banana'
+        <p></p>
+>>> letter = fruit[1]
+      </code>
+      <p>The second statement extracts the character at index position 1 from the fruit variable and assigns it to the letter variable.
+
+The expression in brackets is called an index. The index indicates which character in the sequence you want (hence the name).</p>
+    </section>
+    <section class="main-section" id="Chapter_7:_Files">
+      <header>
+        <h3>Chapter 7: Files</h3>
+      </header>
+      <p>In this chapter, we start to work with Secondary Memory (or files). Secondary memory is not erased when the power is turned off. Or in the case of a USB flash drive, the data we write from our programs can be removed from the system and transported to another system.</p>
+    </section>
+    <section class="main-section" id="Chapter_8:_Lists">
+      <header>
+        <h3>Chapter 8: Lists</h3>
+      </header>
+      <p>Like a string, a list is a sequence of values. In a string, the values are characters; in a list, they can be any type. The values in lists are called elements or sometimes items.</p>
+      <p>There are several ways to create a new list; the simplest is to enclose the elements in square brackets (“[” and ”]”):</p>
+      <code>[10, 20, 30, 40]<p></p>
+['crunchy frog', 'ram bladder', 'lark vomit']</code>
+<p>The first example is a list of four integers. The second is a list of three strings. The elements of a list don’t have to be the same type. The following list contains a string, a float, an integer, and (lo!) another list:</p>
+<code>['spam', 2.0, 5, [10, 20]]</code>
+<p>A list within another list is nested.
+<p></p>
+A list that contains no elements is called an empty list; you can create one with empty brackets, [].
+<p></p>
+As you might expect, you can assign list values to variables:
+<code><p>>>> cheeses = ['Cheddar', 'Edam', 'Gouda']</p>
+>>> numbers = [17, 123]<p></p>
+>>> empty = []<p></p>
+>>> print(cheeses, numbers, empty)
+['Cheddar', 'Edam', 'Gouda'] [17, 123] []</code>
+    </section>
+    <section class="main-section" id="Chapter_9:_Dictionaries">
+      <header>
+        <h3>Chapter 9: Dictionaries</h3>
+      </header>
+      <p>A dictionary is like a list, but more general. In a list, the index positions have to be integers; in a dictionary, the indices can be (almost) any type. You can think of a dictionary as a mapping between a set of indices (which are called keys) and a set of values. Each key maps to a value. The association of a key and a value is called a key-value pair or sometimes an item.</p>
+      <p>Suppose you are given a string and you want to count how many times each letter appears. There are several ways you could do it:</p>
+      <ol>
+        <li>You could create 26 variables, one for each letter of the alphabet. Then you could traverse the string and, for each character, increment the corresponding counter, probably using a chained conditional.</li>
+        <p></p>
+        <li>You could create a list with 26 elements. Then you could convert each character to a number (using the built-in function ord), use the number as an index into the list, and increment the appropriate counter.</li>
+        <p></p>
+        <li>You could create a dictionary with characters as keys and counters as the corresponding values. The first time you see a character, you would add an item to the dictionary. After that you would increment the value of an existing item.</li>
+        <p>Each of these options performs the same computation, but each of them implements that computation in a different way.</p>
+  </ol>
+    </section>
+    <section class="main-section" id="Chapter_10:_Tuples">
+      <header>
+        <h3>Chapter 10: Tuples</h3>
+      </header>
+      <p>A tuple is a sequence of values much like a list. The values stored in a tuple can be any type, and they are indexed by integers. The important difference is that tuples are immutable. Tuples are also comparable and hashable so we can sort lists of them and use tuples as key values in Python dictionaries.</p>
+    </section>
+    <section class="main-section" id="Chapter_11:_Regex">
+      <header>
+        <h3>Chapter 11: Regex</h3>
+      </header>
+      <p>This task of searching and extracting is so common that Python has a very powerful module called regular expressions that handles many of these tasks quite elegantly.Regular expressions are almost their own little programming language for searching and parsing strings. As a matter of fact, entire books have been written on the topic of regular expressions.</p> 
+    </section>
+    <section class="main-section" id="Chapter_12:_Networked_Programs">
+      <header>
+        <h3>Chapter 12: Networked Programs</h3>
+      </header>
+      <p>While many of the examples in this book have focused on reading files and looking for data in those files, there are many different sources of information when one considers the Internet. In this chapter we will pretend to be a web browser and retrieve web pages using the Hypertext Transfer Protocol (HTTP). Then we will read through the web page data and parse it.</p>
+    </section>
+    <section class="main-section" id="Chapter_13:_Python_and_Web_Services">
+      <header>
+        <h3>Chapter 13: Python and Web Services</h4>
+      </header>
+      <p>Once it became easy to retrieve documents and parse documents over HTTP using programs, it did not take long to develop an approach where we started producing documents that were specifically designed to be consumed by other programs (i.e., not HTML to be displayed in a browser). There are two common formats that we use when exchanging data across the web. eXtensible Markup Language (XML) has been in use for a very long time and is best suited for exchanging document-style data. When programs just want to exchange dictionaries, lists, or other internal information with each other, they use JavaScript Object Notation (JSON) (see www.json.org). We will look at both formats.</p>
+    </section>
+    <section class="main-section" id="Chapter_14:_Python_Objects">
+      <header>
+        <h3>Chapter 14: Python Objects</h3>
+      </header>
+      <p>At the beginning of this book, we came up with four basic programming patterns which we use to construct programs:</p>
+      <ul>
+        <li>Sequential code</li>
+        <li>Conditional code (if statements)</li>
+        <li>Repetitive code (loops)</li>
+        <li>Store and reuse (functions)</li>
+      </ul>
+      <p>In later chapters, we explored simple variables as well as collection data structures like lists, tuples, and dictionaries.</p>
+      <p>As programs get to be millions of lines long, it becomes increasingly important to write code that is easy to understand. If you are working on a million-line program, you can never keep the entire program in your mind at the same time. We need ways to break large programs into multiple smaller pieces so that we have less to look at when solving a problem, fix a bug, or add a new feature. In a way, object oriented programming is a way to arrange your code so that you can zoom into 50 lines of the code and understand it while ignoring the other 999,950 lines of code for the moment.</p>
+      
+    </section>
+    <section class="main-section" id="Chapter_15:_Python_and_Databases">
+      <header>
+        <h3>Chapter 15: Python and Databases</h3>
+      </header>
+      <p>A database is a file that is organized for storing data. Most databases are organized like a dictionary in the sense that they map from keys to values. The biggest difference is that the database is on disk (or other permanent storage), so it persists after the program ends. Because a database is stored on permanent storage, it can store far more data than a dictionary, which is limited to the size of the memory in the computer. Like a dictionary, database software is designed to keep the inserting and accessing of data very fast, even for large amounts of data. Database software maintains its performance by building indexes as data is added to the database to allow the computer to jump quickly to a particular entry.There are many different database systems which are used for a wide variety of purposes including: Oracle, MySQL, Microsoft SQL Server, PostgreSQL, and SQLite. We focus on SQLite in this book because it is a very common database and is already built into Python. SQLite is designed to be embedded into other applications to provide database support within the application. For example, the Firefox browser also uses the SQLite database internally as do many other products.</p>
+    </section>
+    <section class="main-section" id="Chapter_16:_Data_Visualisation">
+      <header>
+        <h3>Chapter 16: Data Visualisation</h3>
+      </header>
+      <p>So far we have been learning the Python language and then learning how to use Python, the network, and databases to manipulate data. In this chapter, we take a look at three complete applications that bring all of these things together to manage and visualize data. You might use these applications as sample code to help get you started in solving a real-world problem. Each of the applications is a ZIP file that you can download and extract onto your computer and execute.</p>
+    </section>
+</main>
+</body>
+</html>
